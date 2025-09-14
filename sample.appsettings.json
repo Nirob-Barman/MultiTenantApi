@@ -1,0 +1,25 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "HostConnectionMapping": {
+    "default": "DefaultConnection",
+    "client1.contacts.com": "Client1Connection",
+    "client2.contacts.com": "Client2Connection",
+    "client3.contacts.com": "Client3Connection",
+    "client4.contacts.com": "Client4Connection",
+    "client5.contacts.com": "Client5Connection"
+  },
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=ServerName;Database=Contacts_Default;User Id=UserName;Password=Password;TrustServerCertificate=True;",
+    "Client1Connection": "Server=ServerName;Database=Contacts_Client1;User Id=UserName;Password=Password;TrustServerCertificate=True;",
+    "Client2Connection": "Server=ServerName;Database=Contacts_Client2;User Id=UserName;Password=Password;TrustServerCertificate=True;",
+    "Client3Connection": "Server=ServerName;Database=Contacts_Client3;User Id=UserName;Password=Password;TrustServerCertificate=True;",
+    "Client4Connection": "Server=ServerName;Database=Contacts_Client4;User Id=UserName;Password=Password;TrustServerCertificate=True;",
+    "Client5Connection": "Server=ServerName;Database=Contacts_Client5;User Id=UserName;Password=Password;TrustServerCertificate=True;"
+  }
+}
