@@ -60,18 +60,23 @@ cd MultiTenantApi
 
 ```json
 {
-    "Logging": {
-        "LogLevel": {
-            "Default": "Information",
-            "Microsoft.AspNetCore": "Warning"
-        }
-    },
-    "ConnectionStrings": {
-        "DefaultConnection": "Server=ServerName;Database=Contacts_Default;User Id=UserName;Password=Password;TrustServerCertificate=True;",
-        "Client1Connection": "Server=ServerName;Database=Contacts_Client1;User Id=UserName;Password=Password;TrustServerCertificate=True;"
-    },
-    "AllowedHosts": "*"
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "HostConnectionMapping": {
+    "default": "DefaultConnection",
+    "client1.contacts.com": "Client1Connection"
+  },
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=ServerName;Database=Contacts_Default;User Id=UserName;Password=Password;TrustServerCertificate=True;",
+    "Client1Connection": "Server=ServerName;Database=Contacts_Client1;User Id=UserName;Password=Password;TrustServerCertificate=True;"
+  }
 }
+
 ```
 
 3. **Apply Migrations & Create Databases**
