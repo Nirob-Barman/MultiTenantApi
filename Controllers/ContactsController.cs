@@ -5,8 +5,8 @@ using MultiTenantApi.Models;
 
 namespace MultiTenantApi.Controllers
 {
+    [Route("api/[controller]")]
     [ApiController]
-    [Route("[controller]")]
     public class ContactsController : ControllerBase
     {
         private readonly ContactContext _context;
